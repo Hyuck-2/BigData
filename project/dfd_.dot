@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="gender_FEMALE <= 0.5\ngini = 0.5\nsamples = 2615\nvalue = [1300, 1315]\nclass = 0", fillcolor="#399de503"] ;
+1 [label="job_학생 <= 0.5\ngini = 0.445\nsamples = 915\nvalue = [609, 306]\nclass = 1", fillcolor="#e581397f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="job_자영업 <= 0.5\ngini = 0.429\nsamples = 862\nvalue = [593, 269]\nclass = 1", fillcolor="#e581398b"] ;
+1 -> 2 ;
+3 [label="gini = 0.395\nsamples = 693\nvalue = [505, 188]\nclass = 1", fillcolor="#e58139a0"] ;
+2 -> 3 ;
+4 [label="gini = 0.499\nsamples = 169\nvalue = [88, 81]\nclass = 1", fillcolor="#e5813914"] ;
+2 -> 4 ;
+5 [label="gini = 0.422\nsamples = 53\nvalue = [16, 37]\nclass = 0", fillcolor="#399de591"] ;
+1 -> 5 ;
+6 [label="age_50대 <= 0.5\ngini = 0.483\nsamples = 1700\nvalue = [691, 1009]\nclass = 0", fillcolor="#399de550"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="age_40대 <= 0.5\ngini = 0.5\nsamples = 1179\nvalue = [575, 604]\nclass = 0", fillcolor="#399de50c"] ;
+6 -> 7 ;
+8 [label="gini = 0.463\nsamples = 615\nvalue = [391, 224]\nclass = 1", fillcolor="#e581396d"] ;
+7 -> 8 ;
+9 [label="gini = 0.44\nsamples = 564\nvalue = [184, 380]\nclass = 0", fillcolor="#399de584"] ;
+7 -> 9 ;
+10 [label="job_임시직 <= 0.5\ngini = 0.346\nsamples = 521\nvalue = [116, 405]\nclass = 0", fillcolor="#399de5b6"] ;
+6 -> 10 ;
+11 [label="gini = 0.315\nsamples = 480\nvalue = [94, 386]\nclass = 0", fillcolor="#399de5c1"] ;
+10 -> 11 ;
+12 [label="gini = 0.497\nsamples = 41\nvalue = [22, 19]\nclass = 1", fillcolor="#e5813923"] ;
+10 -> 12 ;
+}
