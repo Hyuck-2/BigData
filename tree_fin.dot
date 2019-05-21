@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="ROLLING_TEMP_T5 <= 0.893\ngini = 0.432\nsamples = 285\nvalue = [90, 195]\nclass = 양품", fillcolor="#399de589"] ;
+1 [label="HSB_미적용 <= 2.161\ngini = 0.263\nsamples = 231\nvalue = [36, 195]\nclass = 양품", fillcolor="#399de5d0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="FUR_SZ_TEMP <= 1.47\ngini = 0.182\nsamples = 217\nvalue = [22, 195]\nclass = 양품", fillcolor="#399de5e2"] ;
+1 -> 2 ;
+3 [label="FUR_SZ_TEMP <= 0.156\ngini = 0.101\nsamples = 206\nvalue = [11, 195]\nclass = 양품", fillcolor="#399de5f1"] ;
+2 -> 3 ;
+4 [label="PT_LTH <= -0.667\ngini = 0.035\nsamples = 113\nvalue = [2, 111]\nclass = 양품", fillcolor="#399de5fa"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 69\nvalue = [0, 69]\nclass = 양품", fillcolor="#399de5ff"] ;
+4 -> 5 ;
+6 [label="gini = 0.087\nsamples = 44\nvalue = [2, 42]\nclass = 양품", fillcolor="#399de5f3"] ;
+4 -> 6 ;
+7 [label="FUR_SZ_TEMP <= 0.327\ngini = 0.175\nsamples = 93\nvalue = [9, 84]\nclass = 양품", fillcolor="#399de5e4"] ;
+3 -> 7 ;
+8 [label="gini = 0.5\nsamples = 8\nvalue = [4, 4]\nclass = 불량", fillcolor="#e5813900"] ;
+7 -> 8 ;
+9 [label="gini = 0.111\nsamples = 85\nvalue = [5, 80]\nclass = 양품", fillcolor="#399de5ef"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 11\nvalue = [11, 0]\nclass = 불량", fillcolor="#e58139ff"] ;
+2 -> 10 ;
+11 [label="gini = 0.0\nsamples = 14\nvalue = [14, 0]\nclass = 불량", fillcolor="#e58139ff"] ;
+1 -> 11 ;
+12 [label="gini = 0.0\nsamples = 54\nvalue = [54, 0]\nclass = 불량", fillcolor="#e58139ff"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="DROPPED_CALLS <= 3.5\nfriedman_mse = 0.042\nsamples = 651\nvalue = -0.0", fillcolor="#e581397d"] ;
+1 [label="DROPPED_CALLS <= 0.5\nfriedman_mse = 0.043\nsamples = 501\nvalue = -0.007", fillcolor="#e581397c"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="WEEKEND_CALLS_TIME <= 62.1\nfriedman_mse = 0.053\nsamples = 170\nvalue = 0.016", fillcolor="#e581397f"] ;
+1 -> 2 ;
+3 [label="friedman_mse = 0.039\nsamples = 122\nvalue = -0.087", fillcolor="#e5813973"] ;
+2 -> 3 ;
+4 [label="friedman_mse = 0.084\nsamples = 48\nvalue = 0.886", fillcolor="#e58139df"] ;
+2 -> 4 ;
+5 [label="SERVICE_DURATION <= 15.015\nfriedman_mse = 0.037\nsamples = 331\nvalue = -0.019", fillcolor="#e581397b"] ;
+1 -> 5 ;
+6 [label="friedman_mse = 0.054\nsamples = 34\nvalue = 0.389", fillcolor="#e58139a8"] ;
+5 -> 6 ;
+7 [label="friedman_mse = 0.034\nsamples = 297\nvalue = -0.338", fillcolor="#e5813957"] ;
+5 -> 7 ;
+8 [label="WEEKEND_CALLS_NO <= 32.5\nfriedman_mse = 0.037\nsamples = 150\nvalue = 0.022", fillcolor="#e581397f"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="WEEKEND_CALLS_TIME <= 60.9\nfriedman_mse = 0.036\nsamples = 122\nvalue = 0.035", fillcolor="#e5813981"] ;
+8 -> 9 ;
+10 [label="friedman_mse = 0.025\nsamples = 92\nvalue = 0.105", fillcolor="#e5813988"] ;
+9 -> 10 ;
+11 [label="friedman_mse = 0.06\nsamples = 30\nvalue = 1.172", fillcolor="#e58139ff"] ;
+9 -> 11 ;
+12 [label="WEEKEND_CALLS_TIME <= 89.7\nfriedman_mse = 0.04\nsamples = 28\nvalue = -0.035", fillcolor="#e5813979"] ;
+8 -> 12 ;
+13 [label="friedman_mse = 0.02\nsamples = 11\nvalue = -1.123", fillcolor="#e5813900"] ;
+12 -> 13 ;
+14 [label="friedman_mse = 0.047\nsamples = 17\nvalue = 0.106", fillcolor="#e5813988"] ;
+12 -> 14 ;
+}

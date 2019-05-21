@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="COARSE_AGGREGATE <= 966.5\nmae = 2.183\nsamples = 432\nvalue = 0.001", fillcolor="#e5813944"] ;
+1 [label="COARSE_AGGREGATE <= 962.3\nmae = 1.95\nsamples = 193\nvalue = 0.034", fillcolor="#e5813946"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="SUPERPLASTICIZER <= 8.95\nmae = 1.859\nsamples = 189\nvalue = 0.034", fillcolor="#e5813946"] ;
+1 -> 2 ;
+3 [label="mae = 2.105\nsamples = 104\nvalue = 0.224", fillcolor="#e5813950"] ;
+2 -> 3 ;
+4 [label="mae = 1.536\nsamples = 85\nvalue = -0.113", fillcolor="#e581393e"] ;
+2 -> 4 ;
+5 [label="mae = 5.118\nsamples = 4\nvalue = 3.596", fillcolor="#e58139ff"] ;
+1 -> 5 ;
+6 [label="WATER <= 133.9\nmae = 2.366\nsamples = 239\nvalue = -0.092", fillcolor="#e581393f"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="mae = 0.944\nsamples = 4\nvalue = -1.309", fillcolor="#e5813900"] ;
+6 -> 7 ;
+8 [label="WATER <= 175.8\nmae = 2.381\nsamples = 235\nvalue = -0.085", fillcolor="#e5813940"] ;
+6 -> 8 ;
+9 [label="mae = 2.748\nsamples = 106\nvalue = 0.163", fillcolor="#e581394d"] ;
+8 -> 9 ;
+10 [label="mae = 2.062\nsamples = 129\nvalue = -0.174", fillcolor="#e581393b"] ;
+8 -> 10 ;
+}
