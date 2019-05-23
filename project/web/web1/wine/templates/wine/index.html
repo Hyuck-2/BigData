@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'wine/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'wine/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'wine/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'wine/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'wine/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'wine/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'wine/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'wine/css/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="bg-contact31">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form action = "/result/" method="post" name="input" class="contact3-form validate-form">{% csrf_token %}
+					<span class="contact3-form-title">
+						13.5°<br>Wine Recommendation
+					</span>
+
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						성별:
+						<select name="gender">
+							<option value="1">남성</option>
+							<option value="0">여성</option>
+						</select>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						연령:
+						<select name="age">
+							<option value="0">20대</option>
+							<option value="1">30대</option>
+							<option value="2">40대</option>
+							<option value="3">50대</option>
+							<option value="4">60대~</option>
+						</select><br>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						결혼:
+						<select name="marriage">
+							<option value="1">기혼</option>
+							<option value="0">미혼</option>
+						</select><br>
+					</div>
+					<div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						직업:
+						<select name="job">
+							<option value="0">공무원</option>
+							<option value="1">전문직</option>
+							<option value="2">회사원</option>
+							<option value="3">자영업, 프리랜서</option>
+							<option value="4">학생</option>
+						</select><br>
+					</div>
+					<div class="wrap-contact3-form-radio">
+						<div class="contact3-form-radio m-r-42">
+							<input class="input-radio3" id="radio1" type="checkbox" name="qv" value="0">
+							<label class="label-radio3" for="radio1">
+								<font color = 'black' size = '3'>
+								가성비
+								</font>
+							</label>
+						</div>
+					</div>
+					<span class="focus-input3"></span>
+			<div class="container-contact3-form-btn1">
+						<input type="submit" value="Submit" class="contact3-form-btn1">
+					</div>
+			</div>
+
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="{% static 'wine/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'wine/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'wine/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'wine/vendor/select2/select2.min.js' %}"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'wine/js/main.js' %}"></script>
+
+<!--	&lt;!&ndash; Global site tag (gtag.js) - Google Analytics &ndash;&gt;-->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>-->
+<!--<script>-->
+<!--  window.dataLayer = window.dataLayer || [];-->
+<!--  function gtag(){dataLayer.push(arguments);}-->
+<!--  gtag('js', new Date());-->
+
+<!--  gtag('config', 'UA-23581568-13');-->
+<!--</script>-->
+
+</body>
+</html>

@@ -1,8 +1,8 @@
 digraph Tree {
 node [shape=box, style="filled", color="black"] ;
-0 [label="age_20대 <= 0.5\ngini = 0.5\nsamples = 2051\nvalue = [1006, 1045]\nclass = 0", fillcolor="#399de50a"] ;
-1 [label="gini = 0.485\nsamples = 1433\nvalue = [842, 591]\nclass = 1", fillcolor="#e581394c"] ;
+0 [label="age_20대 <= 0.5\ngini = 0.5\nsamples = 2050\nvalue = [1025, 1025]\nclass = 0", fillcolor="#e5813900"] ;
+1 [label="gini = 0.481\nsamples = 1461\nvalue = [874, 587]\nclass = 0", fillcolor="#e5813954"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="gini = 0.39\nsamples = 618\nvalue = [164, 454]\nclass = 0", fillcolor="#399de5a3"] ;
+2 [label="gini = 0.381\nsamples = 589\nvalue = [151, 438]\nclass = 1", fillcolor="#399de5a7"] ;
 0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
 }
