@@ -28,7 +28,7 @@ def result(request):
 
     alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
     group = [1,2,2,3,3,1,1,1]
-    price = [1.0,1.0,1.5,2.5,1.5,2.0,3.0,1.0]
+    price = [3.5,1.0,1.5,2.5,1.5,2.0,3.0,1.0]
     RED = "{% static 'wine/red_wine.png' %}"
     ROSE = "{% static 'wine/rose_wine.png' %}"
     WHITE = "{% static 'wine/white_wine.png' %}"

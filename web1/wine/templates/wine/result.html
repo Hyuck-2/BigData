@@ -1,0 +1,51 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'wine/result.css' %}">
+</head>
+<body>
+<div class="title">
+    <h1>
+        13.5°<br>Wine Recommendation
+    </h1>
+</div>
+<div class="wrap">
+<div class="table">
+
+<div>
+    {% for wine_group in output %}
+
+  <div class="top">
+    <p>{{ wine_group.2 }}</p>
+    <div class="circle">₩{{ wine_group.1 }}</div>
+  </div>
+  <div class="bottom center">
+
+      {% if wine_group.4 == 1 %}
+      <img src="{% static 'wine/red_wine.png' %}" alt="wine" class="center">
+      {% endif %}
+
+      {% if wine_group.4 == 2 %}
+      <img src="{% static 'wine/rose_wine.png' %}" alt="wine" class="center">
+      {% endif %}
+
+      {% if wine_group.4 == 3 %}
+      <img src="{% static 'wine/white_wine.png' %}" alt="wine" class="center">
+      {% endif %}
+
+    <p>{{ wine_group.3 }}</p>
+      <p class="script">{{ wine_group.5 }}</p>
+    <div class="sign">
+    <a href='#' class='button'>바로드림 주문</a>
+    </div>
+  </div>
+
+
+    {% endfor %}
+</div>
+
+
+</div>
+</div>
+</body>
+</html>
