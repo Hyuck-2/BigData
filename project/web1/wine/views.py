@@ -40,7 +40,7 @@ def result(request):
 
         for idx, wine in enumerate(out):
 
-            if wine == 0:
+            if wine == 1:
                 continue
                 # name, price, title, description, group
             elif group[idx] in output.keys():
@@ -52,7 +52,7 @@ def result(request):
     else:
         output2 = list()
         for idx, wine in enumerate(out):
-            if wine == 0:
+            if wine == 1:
                 output2.append([alphabet[idx], price[idx], title_list[idx], description_list[idx], group[idx]])
 
     if qv == '0':
