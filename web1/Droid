@@ -32,7 +32,7 @@ body {
   @include filter-gradient(#5d4660, #f7eec7, vertical);
   $experimental-support-for-svg: true;
   @include background-image(linear-gradient(top, #5d4660    0%,#f7eec7 100%));
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Noto Serif KR', serif;
 }
 
 .wrap {
@@ -94,7 +94,7 @@ margin-left: auto;
 margin-right: auto;
   p {
      font-size:13px;
-     font-family: 'Droid Serif', sans-serif;
+     font-family: 'Noto Serif KR', sans-serif;
      padding:5px;
     span {
      font-weight:bold;

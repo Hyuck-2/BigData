@@ -1,6 +1,8 @@
 {% load static %}
 <html>
 <head>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'wine/result.css' %}">
 </head>
 <body>
@@ -16,7 +18,7 @@
     {% for wine_group in output %}
 
   <div class="top">
-    <p>{{ wine_group.2 }}</p>
+      <strong><p>{{ wine_group.2 }}</p></strong>
     <div class="circle">₩{{ wine_group.1 }}</div>
   </div>
   <div class="bottom center">
@@ -33,7 +35,7 @@
       <img src="{% static 'wine/white_wine.png' %}" alt="wine" class="center">
       {% endif %}
 
-    <p>{{ wine_group.3 }}</p>
+      <strong><p>{{ wine_group.3 }}</p></strong>
       <p class="script">{{ wine_group.5 }}</p>
     <div class="sign">
     <a href='http://www.winenara.com/shop/main/index.php' class='button'>바로드림 주문</a>
